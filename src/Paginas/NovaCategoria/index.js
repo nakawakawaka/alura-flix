@@ -83,7 +83,7 @@ export default function NovaCategoria({ categoria, novaCategoria, deletar, edita
           aria-label="Descrição"
           placeholder='Descrição'
           minRows={7}
-          style={{backgroundColor:'#2e2e2e', marginTop: '1rem'}}
+          style={{ backgroundColor: '#2e2e2e', marginTop: '1rem', color: 'white' }}
         />
         <InputColor
           onChange={(event) => setCor(event.target.value)}
