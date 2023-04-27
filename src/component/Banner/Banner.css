@@ -1,0 +1,31 @@
+.bannerInfo {
+  margin-right: 4rem;
+  width: 50%;
+}
+
+.bannerInfo h1 {
+  margin-top: 3rem;
+  font-size: 46px;
+}
+
+.player {
+  width: 50%;
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 950px) {
+  .bannerInfo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  .player {
+    width: 100%;
+  }
+}

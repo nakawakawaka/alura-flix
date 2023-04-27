@@ -1,0 +1,33 @@
+.botaoPrincipal {
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 11rem;
+  height: 3.5rem;
+  cursor: pointer;
+  background-color: var(--cor-primaria);
+  border: none;
+  color: white;
+}
+
+.headerBtn {
+  background-color: black;
+  border: solid 1px white;
+}
+
+.headerBtn:hover {
+  background-color: var(--cor-preto-claro);
+}
+
+.bannerBtn {
+  background-color: #6BD1FF;
+  border: none;
+  font-size: 60px;
+  width: 20rem;
+  height: 6rem;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.432);
+}
+
+.bannerBtn:hover {
+  background-color: #92dcff;
+}

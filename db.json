@@ -1,0 +1,207 @@
+{
+  "videos": [
+    {
+      "id": 1,
+      "titulo": "Curso React: Conectando com API pelo React",
+      "url": "https://youtu.be/KCcSzv1RmuI",
+      "img": "https://i.ytimg.com/vi/KCcSzv1RmuI/maxresdefault.jpg",
+      "categoria": "Front-end",
+      "descricao": "Neste vídeo você vai aprender tudo sobre o recurso de Fetch API de JavaScript.Com ele é possível fazer requisições assíncronas à APIs de forma nativa, sem bibliotecas com jQuery ou Axios. Tornando o seu projeto muito mais performático, pois está utilizando um recurso da linguagem."
+    },
+    {
+      "id": 2,
+      "titulo": "Como fazer download das Thumbnails dos Vídeos do Youtube",
+      "url": "https://youtu.be/OjhwMOtAARI",
+      "img": "https://i.ytimg.com/vi/OjhwMOtAARI/maxresdefault.jpg",
+      "categoria": "VieosTeste",
+      "descricao": "descricao"
+    },
+    {
+      "id": 3,
+      "titulo": "APRENDA FETCH API DE JAVASCRIPT COM PROJETO",
+      "url": "https://youtu.be/qIGYM4S8x50",
+      "img": "https://i.ytimg.com/vi/qIGYM4S8x50/maxresdefault.jpg",
+      "categoria": "Front-end",
+      "descricao": "descricao"
+    },
+    {
+      "id": 4,
+      "titulo": "ReactJs : react-alice-carousel - Simple beginner tutorial",
+      "url": "https://youtu.be/LqePRLYwpHQ",
+      "img": "https://i.ytimg.com/vi/LqePRLYwpHQ/maxresdefault.jpg",
+      "categoria": "Front-end",
+      "descricao": "descricao"
+    },
+    {
+      "id": 5,
+      "titulo": "Material UI Tutorial - Custom Themes",
+      "url": "https://youtu.be/xIIJfmDnvPE",
+      "img": "https://i.ytimg.com/vi/xIIJfmDnvPE/maxresdefault.jpg",
+      "categoria": "Front-end",
+      "descricao": "descricao"
+    },
+    {
+      "titulo": "The ASUS ROG Falchion 65% Keyboard is CRAZY",
+      "url": "https://youtu.be/ypPQV3NfzEU",
+      "img": "https://i.ytimg.com/vi/ypPQV3NfzEU/maxresdefault.jpg",
+      "descricao": "ASUS quietly dropped one of the best 65% wireless gaming keyboards on the market with some awesome new features. Check out my review of the ASUS ROG Falchion! \n• Buy the Falchion here: https://amzn.to/3vRp8xh",
+      "codigo": "123",
+      "categoria": "VieosTeste",
+      "id": 6
+    },
+    {
+      "titulo": "O QUE É FRONT-END E BACK-END???",
+      "url": "https://youtu.be/Em0R3csNMVE",
+      "img": "https://i.ytimg.com/vi/Em0R3csNMVE/maxresdefault.jpg",
+      "categoria": "Back-end",
+      "descricao": "Quer se aprofundar mais? Aproveite o desconto na Alura: https://alura.com.br/promocao/rafabal... 🤿\nLembrando que tem curso meu por lá de HTML e CSS, além de diversos outros, já que é a maior plataforma de ensino de tecnologia do Brasil!",
+      "codigo": "555",
+      "id": 7
+    },
+    {
+      "titulo": "React slick slider in React",
+      "url": "https://youtu.be/0n8187o6bJI",
+      "img": "https://i.ytimg.com/vi/0n8187o6bJI/maxresdefault.jpg",
+      "categoria": "VieosTeste",
+      "descricao": "Hello guys. Welcome to another JavaScript tutorial from my channel. In this video, I will show you how to work with react slick.\n\nWatch all parts of portfolio project using the below link.",
+      "codigo": "5555",
+      "id": 8
+    },
+    {
+      "titulo": "Backend Developer Roadmap ",
+      "url": "https://youtu.be/CWAi_2oLhYg",
+      "img": "https://i.ytimg.com/vi/CWAi_2oLhYg/maxresdefault.jpg",
+      "categoria": "Back-end",
+      "descricao": "\nIn this video, we'll be discussing the essential skills and knowledge required to become a successful backend developer. From understanding the fundamentals of software development to mastering version control with Git, we'll cover everything you need to know to excel in this field. Whether you're just starting out or looking to expand your skillset, this video is a must-watch for anyone interested in backend development.",
+      "codigo": "5555",
+      "id": 9
+    },
+    {
+      "titulo": "Inserindo dados no banco via API",
+      "url": "https://youtu.be/gIWmB3EV4Bo",
+      "img": "https://i.ytimg.com/vi/gIWmB3EV4Bo/maxresdefault.jpg",
+      "categoria": "Back-end",
+      "descricao": "Nesta aula vamos fazer um INSERT no banco via rotas da #API no nosso projeto em #React\n\nA ideia é trabalhar a requisição, enviando os headers corretos, dados no body e vendo como a resposta é recebida após a requisição feita na API",
+      "codigo": "5555",
+      "id": 10
+    },
+    {
+      "titulo": "5 Projetos BACKEND para INICIANTES ",
+      "url": "https://youtu.be/6d84jehVhog",
+      "img": "https://i.ytimg.com/vi/6d84jehVhog/maxresdefault.jpg",
+      "categoria": "Back-end",
+      "descricao": "A prática faz parte do aprendizado, então se você está aprendendo programação, é fundamental que você coloque em prática para otimizar seus estudos, pois sem a prática a teoria se perde. Temos muito conteúdo de projetos práticos para programadores iniciantes frontend, mas falta muito conteúdo para backend, e é por isso que estou fazendo esse video. ",
+      "codigo": "5555",
+      "id": 11
+    },
+    {
+      "titulo": "4 libs que não podem faltar no Node.js com TypeScript",
+      "url": "https://youtu.be/mxiRCcnsKDw",
+      "img": "https://i.ytimg.com/vi/mxiRCcnsKDw/maxresdefault.jpg",
+      "categoria": "Back-end",
+      "descricao": "Algumas coisas são tão boas para melhorar o seu código que às vezes dá vontade de usar elas em todos os projetos. \n\nFoi isso que aconteceu com essas libs, que o Diegão decidiu que vai usar em todo desenvolvimento de Node.js + TypeScript daqui pra frente (ou pelo menos em 2023 😅).\n\nNesse vídeo você conhece quais são essas bibliotecas e também vai entender quais os melhores cenários para usar cada uma delas.",
+      "codigo": "5555",
+      "id": 12
+    },
+    {
+      "titulo": "O que é uma Single-Page Application? (SPA)",
+      "url": "https://youtu.be/opxYpCKzlLk",
+      "img": "https://i.ytimg.com/vi/opxYpCKzlLk/maxresdefault.jpg",
+      "categoria": "VieosTeste",
+      "descricao": "Mas afinal, o que é uma Single-Page Application? Você sabe a melhor forma e os melhores frameworks para construí-la? Assista as dicas e o bate-papo da Roberta Arcoverde e do Maurício Linhares no vídeo! ",
+      "codigo": "11111",
+      "id": 13
+    },
+    {
+      "titulo": "O que é Biblioteca, Framework e API?",
+      "url": "https://youtu.be/F0H4HPXdZog",
+      "img": "https://i.ytimg.com/vi/F0H4HPXdZog/maxresdefault.jpg",
+      "categoria": "VieosTeste",
+      "descricao": "Afinal, o que são Bibliotecas, Frameworks e API's? Maurício Linhares e Paulo Silveira conversam sobre esses termos e dão explicações práticas para te explicá-los. Assista e descubra! ",
+      "codigo": "11111",
+      "id": 14
+    },
+    {
+      "titulo": "Como criar uma Pokedex com HTML, CSS e JavaScript",
+      "url": "https://youtu.be/SjtdH3dWLa8",
+      "img": "https://i.ytimg.com/vi/SjtdH3dWLa8/maxresdefault.jpg",
+      "categoria": "Front-end",
+      "descricao": "\nNesse vídeo nós vamos criar um Pokédex utilizando apenas HTML, CSS e JavaScript.\n\nVeremos bastante CSS, técnicas legais que você pode usar nos seus próprios projetos e muito mais!",
+      "codigo": "5555",
+      "id": 15
+    },
+    {
+      "titulo": "Como criar um jogo SIMPLES usando JavaScript e HTML",
+      "url": "https://youtu.be/r9buAwVBDhA",
+      "img": "https://i.ytimg.com/vi/r9buAwVBDhA/maxresdefault.jpg",
+      "categoria": "Front-end",
+      "descricao": "Nesse vídeo tutorial você vai aprender a programar um jogo simples usando apenas html, css e JavaScript.\n\nAo final, você terá feito um jogo onde é possível pular obstáculos. O jogo termina quando você colide com algum obstáculo.",
+      "codigo": "5555",
+      "id": 16
+    },
+    {
+      "titulo": "Tela de Login do League of Legends com HTML, CSS e JavaScript",
+      "url": "https://youtu.be/tyVvNj-UvxM",
+      "img": "https://i.ytimg.com/vi/tyVvNj-UvxM/maxresdefault.jpg",
+      "categoria": "Front-end",
+      "descricao": "Nesse vídeo nós iremos recriar a tela de login do jogo League of Legends.\n\nVeremos conteúdos como seletores avançados css, pseudo-classes, pseudo-elementos, funções e eventos no JavaScript e muito mais!\n\nEspero que gostem!",
+      "codigo": "5555",
+      "id": 17
+    },
+    {
+      "titulo": "Seja um Programador Back-End de Sucesso",
+      "url": "https://youtu.be/TJ90DZjYdWI",
+      "img": "https://i.ytimg.com/vi/TJ90DZjYdWI/maxresdefault.jpg",
+      "categoria": "Back-end",
+      "descricao": "Separamos nesse vídeo as principais skills que acreditamos serem necessárias para se tornar um ótimo Desenvolvedor BackEnd. Se tonar um programador é algo que leva tempo e precisa de dedicação e persistência. Com nossas dicas acreditamos que podemos dar um norte pra quem está iniciando e quer entender melhor como o processo de aprendizado pode ser conduzido.",
+      "codigo": "5555",
+      "id": 18
+    },
+    {
+      "titulo": "Como finalmente organizei minha ROTINA e me tornei mais PRODUTIVA!",
+      "url": "https://youtu.be/yxvXKUTEOUI",
+      "img": "https://i.ytimg.com/vi/yxvXKUTEOUI/maxresdefault.jpg",
+      "categoria": "VieosTeste",
+      "descricao": "Oi gente! Não esquece de se inscrever para não perder mais conteúdo de programação e tecnologia!\n\nHoje trouxe um vídeo um pouquinho diferente do que venho postando (sobre explicação e códigos), mas é algo que vocês sempre me perguntam: como organizo minha rotina?\n\nEu sintetizei em um vídeo só várias das coisas que eu faço na minha rotina, e que melhoraram a minha produtividade nos últimos meses",
+      "codigo": "5555",
+      "id": 19
+    }
+  ],
+  "categoria": [
+    {
+      "nome": "Front-end",
+      "descricao": "Videos que me ajudaram a desenvolver este projeto",
+      "cor": "#6BD1FF",
+      "codigo": 123,
+      "id": 1
+    },
+    {
+      "nome": "Back-end",
+      "descricao": "Videos que me ajudaram a desenvolver a api do projeto",
+      "cor": "#6B5BE2",
+      "codigo": 123,
+      "id": 2
+    },
+    {
+      "nome": "DevOps",
+      "descricao": "descricao",
+      "cor": "#FF8C2A",
+      "codigo": 123,
+      "id": 3
+    },
+    {
+      "nome": "VieosTeste",
+      "descricao": "Videos de teste",
+      "cor": "#cf6fdc",
+      "codigo": "222",
+      "id": 4
+    },
+    {
+      "nome": "Data Science",
+      "descricao": "A ciência de dados é o estudo dos dados para extrair insights significativos para os negócios.",
+      "cor": "#6500a8",
+      "codigo": "222",
+      "id": 5
+    }
+  ]
+}
