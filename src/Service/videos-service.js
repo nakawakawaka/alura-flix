@@ -1,5 +1,5 @@
 const listaVideos = () => {
-  return fetch ('http://localhost:3000/videos')
+  return fetch ('https://aluraflix-api.vercel.app/videos')
     .then((responsta) => {
       if (responsta.ok) {
         return responsta.json();
@@ -9,7 +9,7 @@ const listaVideos = () => {
 }
 
 const cadastraVideo = (titulo, url, img, categoria, descricao, codigo) => {
-  return fetch('http://localhost:3000/videos', {
+  return fetch('https://aluraflix-api.vercel.app/videos', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -31,7 +31,7 @@ const cadastraVideo = (titulo, url, img, categoria, descricao, codigo) => {
 }
 
 const video = (id) => {
-  return fetch(`http://localhost:3000/videos/${id}`)
+  return fetch(`https://aluraflix-api.vercel.app/videos/${id}`)
   .then(resposta => {
     if (resposta.ok) {
       return resposta.json();
@@ -47,7 +47,7 @@ const listaCategorias = () => {
 }
 
 const cadastraCategoria = async (nome, descricao, cor, codigo) => {
-  return await fetch('http://localhost:3000/categoria', {
+  return await fetch('https://aluraflix-api.vercel.app/categoria', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -67,7 +67,7 @@ const cadastraCategoria = async (nome, descricao, cor, codigo) => {
 }
 
 const removeCategoria = async (id) => {
-  return await fetch(`http://localhost:3000/categoria/${id}`, {
+  return await fetch(`https://aluraflix-api.vercel.app/categoria/${id}`, {
     method: 'DELETE'
   }).then(resposta => {
     if(!resposta.ok) {
@@ -77,7 +77,7 @@ const removeCategoria = async (id) => {
 }
 
 const editaCategoria = (id, nome, descricao, cor, codigo) => {
-  return fetch(`http://localhost:3000/categoria/${id}`, {
+  return fetch(`https://aluraflix-api.vercel.app/categoria/${id}`, {
     method: 'PUT',
     headers: {
       'Content-type': 'application/json'
