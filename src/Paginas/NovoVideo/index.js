@@ -2,7 +2,6 @@ import { useContext, useState } from 'react';
 import { videosService } from 'Service/videos-service';
 import { MenuItem, TextField, TextareaAutosize, createTheme, ThemeProvider, Button } from '@mui/material';
 import styled from 'styled-components';
-// import Button from 'component/Button';
 import BtnSalvarLimpar from 'component/BtnSalvarLimpar';
 import ValidacoesFormulario from 'Context/ValidacoesFormulario';
 import useErros from 'Hooks/useErros';
@@ -45,7 +44,7 @@ export default function NovoVideo({ categoria }) {
 
   return (
     <ThemeProvider theme={darkTheme}>
-      <Form onSubmit={event => {
+      <Form onSubmit={ event => {
         event.preventDefault();
         if (possoEnviar()) {
           videosService.cadastraVideo(titulo, url, img, categSelec, descricao, codigo);

@@ -46,8 +46,8 @@ const listaCategorias = () => {
   .catch(err => console.log(err))
 }
 
-const cadastraCategoria = async (nome, descricao, cor, codigo) => {
-  return await fetch('https://aluraflix-api.vercel.app/categoria', {
+const cadastraCategoria = (nome, descricao, cor, codigo) => {
+  return fetch('https://aluraflix-api.vercel.app/categoria', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -62,12 +62,12 @@ const cadastraCategoria = async (nome, descricao, cor, codigo) => {
     if (resposta.ok) {
       return resposta.body;
     }
-    throw new Error('Não foi possível cadastrar um video.');
+    throw new Error('Não foi possível cadastrar uma Categoria.');
   })
 }
 
-const removeCategoria = async (id) => {
-  return await fetch(`https://aluraflix-api.vercel.app/categoria/${id}`, {
+const removeCategoria = (id) => {
+  return fetch(`https://aluraflix-api.vercel.app/categoria/${id}`, {
     method: 'DELETE'
   }).then(resposta => {
     if(!resposta.ok) {
