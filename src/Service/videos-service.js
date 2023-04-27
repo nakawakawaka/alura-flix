@@ -41,7 +41,7 @@ const video = (id) => {
 }
 
 const listaCategorias = () => {
-  return fetch('http://localhost:3000/categoria')
+  return fetch('https://aluraflix-api.vercel.app/categoria')
   .then(resp => resp.json())
   .catch(err => console.log(err))
 }
