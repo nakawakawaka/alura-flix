@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { TextField, TextareaAutosize, ThemeProvider, createTheme } from "@mui/material";
+import { TextField, ThemeProvider, createTheme } from "@mui/material";
 import styled from "styled-components";
 import BtnSalvarLimpar from "component/BtnSalvarLimpar";
 import ListaCategoria from "component/ListaCategoria";

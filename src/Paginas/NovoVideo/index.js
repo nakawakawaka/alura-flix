@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
 import { videosService } from 'Service/videos-service';
-import { MenuItem, TextField, TextareaAutosize, createTheme, ThemeProvider, Button } from '@mui/material';
+import { MenuItem, TextField, createTheme, ThemeProvider, Button } from '@mui/material';
 import styled from 'styled-components';
 import BtnSalvarLimpar from 'component/BtnSalvarLimpar';
 import ValidacoesFormulario from 'Context/ValidacoesFormulario';
