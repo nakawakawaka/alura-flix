@@ -10,6 +10,7 @@ import Swal from 'sweetalert2'
 const Form = styled.form`
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
 `
 
 const InputColor = styled.input`
