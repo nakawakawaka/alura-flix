@@ -103,14 +103,15 @@ export default function NovoVideo({ categoria }) {
           ))}
         </TextField>
 
-        <TextareaAutosize
+        <TextField 
           onChange={(event) => setDescricao(event.target.value)}
           value={descricao}
-          aria-label="Descrição"
+          variant="filled"
           placeholder='Descrição'
-          minRows={7}
-          style={{ backgroundColor: '#2e2e2e', marginTop: '1rem', color: 'white' }}
+          multiline
+          rows={7}
         />
+
         <TextField
           onChange={(event) => setCodigo(event.target.value)}
           value={codigo}

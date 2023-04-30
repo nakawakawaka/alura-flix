@@ -77,13 +77,13 @@ export default function NovaCategoria({ categoria, novaCategoria, deletar, edita
           fullWidth
           required
         />
-        <TextareaAutosize
+        <TextField 
           onChange={(event) => setDescricao(event.target.value)}
           value={descricao}
-          aria-label="Descrição"
+          variant="filled"
           placeholder='Descrição'
-          minRows={7}
-          style={{ backgroundColor: '#2e2e2e', marginTop: '1rem', color: 'white' }}
+          multiline
+          rows={7}
         />
         <InputColor
           onChange={(event) => setCor(event.target.value)}
