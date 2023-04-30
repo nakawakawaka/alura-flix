@@ -29,3 +29,9 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .bannerInfo h1 {
+    font-size: 33px;
+  }
+}

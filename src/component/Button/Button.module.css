@@ -31,3 +31,9 @@
 .bannerBtn:hover {
   background-color: #92dcff;
 }
+
+@media screen and (max-width:500px) {
+  .bannerBtn {
+    font-size: 45px;
+  }
+}

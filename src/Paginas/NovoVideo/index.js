@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { videosService } from 'Service/videos-service';
 import { MenuItem, TextField, createTheme, ThemeProvider, Button } from '@mui/material';
 import styled from 'styled-components';
+import Swal from 'sweetalert2'
 import BtnSalvarLimpar from 'component/BtnSalvarLimpar';
 import ValidacoesFormulario from 'Context/ValidacoesFormulario';
 import useErros from 'Hooks/useErros';
@@ -10,6 +11,11 @@ import { Link } from 'react-router-dom';
 const BtnContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const Form = styled.form`
@@ -48,6 +54,11 @@ export default function NovoVideo({ categoria }) {
         event.preventDefault();
         if (possoEnviar()) {
           videosService.cadastraVideo(titulo, url, img, categSelec, descricao, codigo);
+          Swal.fire(
+            'Sucesso!',
+            'Video cadastrado com sucesso!',
+            'success'
+          )
         }
       }} className='container' >
         <h1>Novo Video</h1>

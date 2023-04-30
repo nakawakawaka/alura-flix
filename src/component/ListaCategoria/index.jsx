@@ -1,5 +1,5 @@
 import { Button, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
-
+import Swal from 'sweetalert2';
 
 export default function ListaCategoria({ categoria, deletar, editar }) {
   return (
@@ -26,7 +26,26 @@ export default function ListaCategoria({ categoria, deletar, editar }) {
                 </Button>
               </TableCell>
               <TableCell align="center" padding="none">
-                <Button variant="text" color="error" onClick={async () => await deletar(data.id)} >
+                <Button variant="text" color="error" onClick={() => {
+                  Swal.fire({
+                    title: 'Voce tem certeza?',
+                    text: "O item selecionado será deletado!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Sim, delete!'
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                      deletar(data.id)
+                      Swal.fire(
+                        'Deletado!',
+                        'A categoria foi deletada com sucesso.',
+                        'success'
+                      )
+                    }
+                  })
+                }} >
                   Remover
                 </Button>
               </TableCell>

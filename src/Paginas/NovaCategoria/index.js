@@ -5,6 +5,7 @@ import BtnSalvarLimpar from "component/BtnSalvarLimpar";
 import ListaCategoria from "component/ListaCategoria";
 import useErros from "Hooks/useErros";
 import ValidacoesFormulario from "Context/ValidacoesFormulario";
+import Swal from 'sweetalert2'
 
 const Form = styled.form`
   display: flex;
@@ -57,9 +58,20 @@ export default function NovaCategoria({ categoria, novaCategoria, deletar, edita
         if(possoEnviar()) {
           if (!edit) {
             await novaCategoria({nome, descricao, cor, codigo})
+            setCodigo('')
+            Swal.fire(
+              'Sucesso!',
+              'Categoria cadastrada com sucesso!',
+              'success'
+            )
           } else {
             await editar(edit, {nome, descricao, cor, codigo});
             setCodigo('')
+            Swal.fire(
+              'Sucesso!',
+              'Categoria editada com sucesso!',
+              'success'
+            )
           }
         }
       }} className='container'>

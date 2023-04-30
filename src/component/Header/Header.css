@@ -9,3 +9,13 @@
 .header  img {
   width: 10rem;
 }
+
+@media screen and (max-width: 450px) {
+  .header img {
+    width: 7rem;
+  }
+
+  .header Button {
+    width: 7rem;
+  }
+}
