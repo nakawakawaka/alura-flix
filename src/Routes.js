@@ -14,7 +14,6 @@ export default function AppRoutes() {
       <Header />
 
       <ApiProvider>
-        <section>
           <ValidacoesFormulario.Provider value={{
             titulo: validaCampos,
             url: validaCampos,
@@ -33,7 +32,6 @@ export default function AppRoutes() {
               <Route path='*' element={<div>Pagina não encontrada</div>} />
             </Routes>
           </ValidacoesFormulario.Provider>
-        </section>
       </ApiProvider>
 
       <Footer />
