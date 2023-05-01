@@ -1,7 +1,9 @@
 import { Button, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
+import { useAPI } from "Context/Api";
 import Swal from 'sweetalert2';
 
-export default function ListaCategoria({ categoria, deletar, editar }) {
+export default function ListaCategoria({ editar }) {
+  const { Categoria, deletaCategoria } = useAPI()
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="caption table">
@@ -14,7 +16,7 @@ export default function ListaCategoria({ categoria, deletar, editar }) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {categoria.map((data) => (
+          {Categoria.map((data) => (
             <TableRow key={data.nome}>
               <TableCell component="th" scope="data">
                 {data.nome}
@@ -37,7 +39,7 @@ export default function ListaCategoria({ categoria, deletar, editar }) {
                     confirmButtonText: 'Sim, delete!'
                   }).then((result) => {
                     if (result.isConfirmed) {
-                      deletar(data.id)
+                      deletaCategoria(data.id)
                       Swal.fire(
                         'Deletado!',
                         'A categoria foi deletada com sucesso.',

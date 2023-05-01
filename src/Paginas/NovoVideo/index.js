@@ -1,5 +1,4 @@
 import { useContext, useState } from 'react';
-import { videosService } from 'Service/videos-service';
 import { MenuItem, TextField, createTheme, ThemeProvider, Button } from '@mui/material';
 import styled from 'styled-components';
 import Swal from 'sweetalert2'
@@ -7,6 +6,7 @@ import BtnSalvarLimpar from 'component/BtnSalvarLimpar';
 import ValidacoesFormulario from 'Context/ValidacoesFormulario';
 import useErros from 'Hooks/useErros';
 import { Link } from 'react-router-dom';
+import { useAPI } from 'Context/Api';
 
 const BtnContainer = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ const darkTheme = createTheme({
   },
 })
 
-export default function NovoVideo({ categoria }) {
+export default function NovoVideo() {
   const [titulo, setTitulo] = useState('');
   const [url, setUrl] = useState('');
   const [img, setImg] = useState('');
@@ -39,6 +39,7 @@ export default function NovoVideo({ categoria }) {
   const [codigo, setCodigo] = useState('');
   const validacoes = useContext(ValidacoesFormulario);
   const [erros, validarCampos, possoEnviar] = useErros(validacoes);
+  const { Categoria, cadastraVideo } = useAPI();
 
   const limpar = () => {
     setTitulo('');
@@ -54,7 +55,7 @@ export default function NovoVideo({ categoria }) {
       <Form onSubmit={ event => {
         event.preventDefault();
         if (possoEnviar()) {
-          videosService.cadastraVideo(titulo, url, img, categSelec, descricao, codigo);
+          cadastraVideo({titulo, url, img, categSelec, descricao, codigo});
           Swal.fire(
             'Sucesso!',
             'Video cadastrado com sucesso!',
@@ -108,7 +109,7 @@ export default function NovoVideo({ categoria }) {
           variant="filled"
           margin='normal'
         >
-          {categoria.map((option) => (
+          {Categoria.map((option) => (
             <MenuItem key={option.id} value={option.nome}>
               {option.nome}
             </MenuItem>

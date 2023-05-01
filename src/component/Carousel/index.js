@@ -3,6 +3,7 @@ import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Carousel.css"
+import { useAPI } from "Context/Api";
 
 const settings = {
   dots: false,
@@ -48,7 +49,8 @@ const VidesoContainer = styled.div`
   }
 `
 
-export default function Carousel({ videos, cor, mostraVideo }) {
+export default function Carousel({ videos, cor }) {
+  const { mostraVideo } = useAPI();
   const items = videos.map((video) => (
     <VidesoContainer key={video.id}>
       <img

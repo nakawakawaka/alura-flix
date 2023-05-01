@@ -6,6 +6,7 @@ import ListaCategoria from "component/ListaCategoria";
 import useErros from "Hooks/useErros";
 import ValidacoesFormulario from "Context/ValidacoesFormulario";
 import Swal from 'sweetalert2'
+import { useAPI } from "Context/Api";
 
 const Form = styled.form`
   display: flex;
@@ -27,14 +28,15 @@ const darkTheme = createTheme({
   },
 })
 
-export default function NovaCategoria({ categoria, novaCategoria, deletar, editar}) {
+export default function NovaCategoria() {
   const [nome, setNome] = useState('');
   const [descricao, setDescricao] = useState('');
-  const [cor, setCor] = useState('');
+  const [cor, setCor] = useState('#000000');
   const [codigo, setCodigo] = useState('');
   const [edit, setEdit] = useState('');
   const validacoes = useContext(ValidacoesFormulario);
   const [erros, validarCampos, possoEnviar] = useErros(validacoes);
+  const {cadastraCategoria, editaCategoria } = useAPI();
 
   const editarCategoria = (props) => {
     setNome(props.nome)
@@ -54,11 +56,11 @@ export default function NovaCategoria({ categoria, novaCategoria, deletar, edita
   
   return (
     <ThemeProvider theme={darkTheme}>
-      <Form onSubmit={async event => {
+      <Form onSubmit={event => {
         event.preventDefault();
         if(possoEnviar()) {
           if (!edit) {
-            await novaCategoria({nome, descricao, cor, codigo})
+            cadastraCategoria({nome, descricao, cor, codigo})
             setCodigo('')
             Swal.fire(
               'Sucesso!',
@@ -66,7 +68,7 @@ export default function NovaCategoria({ categoria, novaCategoria, deletar, edita
               'success'
             )
           } else {
-            await editar(edit, {nome, descricao, cor, codigo});
+            editaCategoria(edit, {nome, descricao, cor, codigo});
             setCodigo('')
             Swal.fire(
               'Sucesso!',
@@ -118,7 +120,7 @@ export default function NovaCategoria({ categoria, novaCategoria, deletar, edita
         />
         <BtnSalvarLimpar limpar={limpar} />
       </Form>
-      <ListaCategoria categoria={categoria} deletar={deletar} editar={editarCategoria} />
+      <ListaCategoria editar={editarCategoria} />
     </ThemeProvider>
   )
 }

@@ -9,7 +9,7 @@ const CategoriaContainer = styled.div`
   margin-bottom: 1rem;
 `
 
-export default function Categorias({ id, cor, nome, descricao, videos, mostraVideo, destaque }) {
+export default function Categorias({ id, cor, nome, descricao, videos }) {
   return (
     videos.length > 0 && <div
       className='container'
@@ -20,7 +20,7 @@ export default function Categorias({ id, cor, nome, descricao, videos, mostraVid
         </Button>
         <p>{descricao}</p>
       </CategoriaContainer>
-      <Carousel videos={videos} cor={cor} mostraVideo={mostraVideo} destaque={destaque} />
+      <Carousel videos={videos} cor={cor} />
     </div>
   )
 }

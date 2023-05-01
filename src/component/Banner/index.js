@@ -1,4 +1,4 @@
-
+import { useAPI } from 'Context/Api';
 import styled from '@emotion/styled';
 import Button from '../Button';
 import './Banner.css'
@@ -27,22 +27,21 @@ const Overlay = styled.div`
   }
 `
 
+const Banner = () => {
+  const { banner } = useAPI()
 
-const Banner = ({ categoria, titulo, descricao, img, url }) => {
   return (
-    <BannerContainer img={img} >
+    <BannerContainer img={banner.img} >
       <Overlay className='container'>
         <div className='bannerInfo'>
-          <Button texto={categoria} tipo='bannerBtn' />
-          <h1>{titulo}</h1>
-          <p>{descricao}</p>
+          <Button texto={banner.categoria} tipo='bannerBtn' />
+          <h1>{banner.titulo}</h1>
+          <p>{banner.descricao}</p>
         </div>
 
         <div className='player'>
-          <ReactPlayer url={url} controls />
+          <ReactPlayer url={banner.url} controls />
         </div>
-
-
       </Overlay>
     </BannerContainer>
   )
